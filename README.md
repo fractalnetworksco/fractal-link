@@ -11,9 +11,9 @@ pip install fractal-link
 fractal link init https://link.mydomain.com to nginx:80 via user@gateway.com
 
 # raw tcp
-fractal link init tcp://25:postfix:25 via user@gateway.com
+fractal link init tcp://25:postfix:25,tcp://587:postfix:587 via user@gateway.com
 # OR
-fractal link init TCP4-LISTEN:25,TCP4:postfix:25 via user@gateway.com
+fractal link init TCP4-LISTEN:25,TCP4:postfix:25 TCP4-LISTEN:587,TCP4:postfix:587 via user@gateway.com
 
 # raw udp
 fractal link init udp://51820:wireguard:51820 via user@gateway.com
