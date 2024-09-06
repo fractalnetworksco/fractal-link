@@ -1,0 +1,15 @@
+services:
+  sandesh:
+    container_name: sandesh.selfhosted.pub
+    build: .
+    ports:
+      - 30303:30303
+      - 4000:4000/udp
+      - 4000:4000
+      - 49207:18521/udp
+    environment:
+      - GATEWAY_LINK_WG_PRIVKEY=<PRIVATE_KEY>
+      - CLIENT_LINK_WG_PUBKEY=<PUBLIC_KEY>
+    cap_add:
+      - NET_ADMIN
+    command: bash -c "jpf.sh add tcp 30303 10.0.0.2 32777 && jpf.sh add tcp 4000 10.0.0.2 4000 && jpf.sh add udp 4000 10.0.0.2 4000"
