@@ -368,21 +368,21 @@ ssh = ["paramiko (>=2.4.3)"]
 websockets = ["websocket-client (>=1.3.0)"]
 
 [[package]]
-name = "fractal-cli"
+name = "etherai-cli"
 version = "0.1.3"
 description = ""
 optional = false
 python-versions = ">=3.10,<4.0"
 files = [
-    {file = "fractal_cli-0.1.3-py3-none-any.whl", hash = "sha256:7237c5a159fdda5713c3864e36d5547029f6c3d30916147ec93e2fa37f1a7d91"},
-    {file = "fractal_cli-0.1.3.tar.gz", hash = "sha256:8380b1fd9072bf2c3fcf8df4e56298baac1f5362129b550828f8b914cbd93e68"},
+    {file = "etherai_cli-0.1.3-py3-none-any.whl", hash = "sha256:7237c5a159fdda5713c3864e36d5547029f6c3d30916147ec93e2fa37f1a7d91"},
+    {file = "etherai_cli-0.1.3.tar.gz", hash = "sha256:8380b1fd9072bf2c3fcf8df4e56298baac1f5362129b550828f8b914cbd93e68"},
 ]
 
 [package.dependencies]
 appdirs = ">=1.4.4,<2.0.0"
 asgiref = ">=3.7.2"
 clicz = ">=0.0.2"
-fractal-matrix-client = ">=0.0.1"
+etherai-matrix-client = ">=0.0.1"
 pyyaml = ">=6.0.1,<7.0.0"
 rich = ">=12.6.0"
 toml = ">=0.10.2,<0.11.0"
@@ -391,14 +391,14 @@ toml = ">=0.10.2,<0.11.0"
 dev = ["docker (>=6.1.3,<7.0.0)", "ipython (>=8.17.2,<9.0.0)", "pytest (>=7.4.3,<8.0.0)", "pytest-asyncio (>=0.21.1,<0.22.0)", "pytest-cov (>=4.1.0,<5.0.0)", "pytest-mock (>=3.11.1,<4.0.0)"]
 
 [[package]]
-name = "fractal-matrix-client"
+name = "etherai-matrix-client"
 version = "0.0.8"
 description = ""
 optional = false
 python-versions = "<4.0,>=3.10"
 files = [
-    {file = "fractal_matrix_client-0.0.8-py3-none-any.whl", hash = "sha256:bf963fc95a3fb2d5a995336bca2717a01d3d71d7cb82039f9bb3fb7c31f3f645"},
-    {file = "fractal_matrix_client-0.0.8.tar.gz", hash = "sha256:db69c94211b95b066cf8dc5d49ec76890d7c935b0ede5929f92eab1197a44cf8"},
+    {file = "etherai_matrix_client-0.0.8-py3-none-any.whl", hash = "sha256:bf963fc95a3fb2d5a995336bca2717a01d3d71d7cb82039f9bb3fb7c31f3f645"},
+    {file = "etherai_matrix_client-0.0.8.tar.gz", hash = "sha256:db69c94211b95b066cf8dc5d49ec76890d7c935b0ede5929f92eab1197a44cf8"},
 ]
 
 [package.dependencies]

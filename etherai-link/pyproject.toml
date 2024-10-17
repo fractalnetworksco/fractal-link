@@ -1,18 +1,18 @@
 [tool.poetry]
-name = "fractal-link"
+name = "etherai-link"
 version = "0.1.0"
 description = ""
-authors = ["Mo Balaa <balaa@fractalnetworks.co>"]
+authors = ["Mo Balaa <balaa@etherainetworks.co>"]
 readme = "README.md"
 
 [tool.poetry.dependencies]
 python = "^3.11"
-fractal-cli = "^0.1.3"
+etherai-cli = "^0.1.3"
 
 
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
 
-[tool.poetry.plugins."fractal.plugins"]
-"links" = "fractal_link.controllers.link"
+[tool.poetry.plugins."etherai.plugins"]
+"links" = "etherai_link.controllers.link"

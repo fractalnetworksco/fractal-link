@@ -1,12 +1,12 @@
 ## Get all existing links on Gateway
 ```
-docker ps --filter "ancestor=fractalnetworks/gateway-link:latest"
+docker ps --filter "ancestor=etherai/gateway-link:latest"
 ```
 
 ## Export all links to csv
 ```bash
 docker ps \
-  --filter 'ancestor=fractalnetworks/gateway-link:latest' \
+  --filter 'ancestor=etherai/gateway-link:latest' \
   --format '{{.Names}},{{.Ports}}' | \
 while IFS=',' read -r name ports; do
   # Prepare container names and extract port
